@@ -1,4 +1,4 @@
-import { Product } from "./02-insertProducts";
+import { Product } from './02-insertProducts';
 
 const products = [
   {
@@ -25,7 +25,7 @@ const products = [
 ];
 
 export default function findById(id: number): Product | string {
-  const produt = products.find(product => product.id === id)
-  if(!produt) return `Produto com ID ${id} não encontrado.`
-  return produt
+  const produt = products.find((product) => product.id === id);
+  if (!produt) return `Produto com ID ${id} não encontrado.`;
+  return produt;
 }
